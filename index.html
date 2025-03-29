@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wake County 5 Pro - Unblocked Games</title>
+    <style>
+        body {
+            background-color: #d32f2f; /* Red Background */
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin-top: 20px;
+        }
+        .search-container {
+            margin: 20px auto;
+            width: 50%;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: none;
+        }
+        .game-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .game {
+            background: black;
+            padding: 15px;
+            border-radius: 10px;
+            width: 300px;
+            display: inline-block;
+        }
+        .game iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+        .game a {
+            display: block;
+            color: #ffeb3b;
+            margin-top: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .game a:hover {
+            text-decoration: underline;
+        }
+        .game.hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Wake County 5 Pro - Unblocked Games</h1>
+    <p>Enjoy your favorite games without restrictions!</p>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="searchBar" placeholder="Search Games..." onkeyup="searchGames()">
+    </div>
+
+    <div class="game-container" id="gameContainer">
+        <!-- Game 1: Subway Surfers -->
+        <div class="game" data-name="Subway Surfers">
+            <iframe src="https://ubg235.github.io/subway-surfers/" title="Subway Surfers"></iframe>
+            <a href="https://ubg235.github.io/subway-surfers/" target="_blank">Play Subway Surfers</a>
+        </div>
+
+        <!-- Game 2: Slope -->
+        <div class="game" data-name="Slope">
+            <iframe src="https://ubg235.github.io/slope/" title="Slope"></iframe>
+            <a href="https://ubg235.github.io/slope/" target="_blank">Play Slope</a>
+        </div>
+
+        <!-- Game 3: Run 3 -->
+        <div class="game" data-name="Run 3">
+            <iframe src="https://ubg235.github.io/run-3/" title="Run 3"></iframe>
+            <a href="https://ubg235.github.io/run-3/" target="_blank">Play Run 3</a>
+        </div>
+
+        <!-- Game 4: 1v1.LOL -->
+        <div class="game" data-name="1v1.LOL">
+            <iframe src="https://ubg235.github.io/1v1-lol/" title="1v1.LOL"></iframe>
+            <a href="https://ubg235.github.io/1v1-lol/" target="_blank">Play 1v1.LOL</a>
+        </div>
+
+        <!-- Game 5: Drift Hunters -->
+        <div class="game" data-name="Drift Hunters">
+            <iframe src="https://ubg235.github.io/drift-hunters/" title="Drift Hunters"></iframe>
+            <a href="https://ubg235.github.io/drift-hunters/" target="_blank">Play Drift Hunters</a>
+        </div>
+
+        <!-- Game 6: Paper.io -->
+        <div class="game" data-name="Paper.io">
+            <iframe src="https://ubg235.github.io/paper-io/" title="Paper.io"></iframe>
+            <a href="https://ubg235.github.io/paper-io/" target="_blank">Play Paper.io</a>
+        </div>
+
+        <!-- Game 7: Tag 2 Player -->
+        <div class="game" data-name="Tag 2 Player">
+            <iframe src="https://ubg235.github.io/tag-2-player/" title="Tag 2 Player"></iframe>
+            <a href="https://ubg235.github.io/tag-2-player/" target="_blank">Play Tag 2 Player</a>
+        </div>
+
+        <!-- Game 8: Agar.io -->
+        <div class="game" data-name="Agar.io">
+            <iframe src="https://ubg235.github.io/agar-io/" title="Agar.io"></iframe>
+            <a href="https://ubg235.github.io/agar-io/" target="_blank">Play Agar.io</a>
+        </div>
+
+        <!-- Game 9: Tank Trouble -->
+        <div class="game" data-name="Tank Trouble">
+            <iframe src="https://ubg235.github.io/tank-trouble/" title="Tank Trouble"></iframe>
+            <a href="https://ubg235.github.io/tank-trouble/" target="_blank">Play Tank Trouble</a>
+        </div>
+
+        <!-- More Unblocked Games -->
+        <div class="game">
+            <a href="https://sites.google.com/view/unblockedgameswtf" target="_blank">More Unblocked Games</a>
+        </div>
+    </div>
+
+    <script>
+        function searchGames() {
+            var input, filter, container, games, game, gameName, i;
+            input = document.getElementById('searchBar');
+            filter = input.value.toLowerCase();
+            container = document.getElementById('gameContainer');
+            games = container.getElementsByClassName('game');
+
+            for (i = 0; i < games.length; i++) {
+                game = games[i];
+                gameName = game.getAttribute('data-name');
+                if (gameName.toLowerCase().indexOf(filter) > -1) {
+                    game.classList.remove('hidden');
+                } else {
+                    game.classList.add('hidden');
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
